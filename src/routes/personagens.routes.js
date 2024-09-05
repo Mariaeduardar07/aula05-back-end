@@ -1,8 +1,8 @@
-import { Router } from "express"
+import { Router } from "express";
 
-const personagens = Router()
+const emocoesRoutes = Router();
 
-const personagensRoutes = [
+let personagensRoutes = [
     {
         id: 100,
         nome: "Totoro",
@@ -25,4 +25,4 @@ const personagensRoutes = [
 
 app.get("/personagens", (req, res) => {
     return res.status(200).send(personagens)
-})
+});
